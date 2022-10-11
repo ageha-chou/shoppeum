@@ -5,11 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Home - Shoppeum Admin</title>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/6.2.0/css/all.min.css}">
 </head>
 <body>
     <div class="container-fluid">
-        <h1>Shoppeum Control Panel</h1>
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <nav class="col-auto col-sm-4 col-xl-2 px-sm-2 px-0 bg-primary collapse collapse-horizontal show pb-2"
+                 id="sidebar">
+                <div class="d-flex flex-column align-items-start px-3 pt-2 text-white min-vh-100">
+                    <a th:href="@{/}">
+                        <img th:src="@{/images/logo.png}" alt="Logo" class="img-fluid d-none d-sm-inline">
+                        <p class="text-black-50 d-sm-none fw-bold">Shoppeum</p>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start w-100"
+                        id="menu">
+                        <!-- Users -->
+                        <li class="nav-item w-100">
+                            <a class="d-flex justify-content-between nav-link px-0 align-middle text-white"
+                               href="#users" data-bs-toggle="collapse">
+                                <span>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="ms-1">Users</span>
+                                </span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <ul class="collapse show nav flex-column ms-1" id="users">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        User1
+                                    </a>
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        User2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Categories -->
+                        <li class="nav-item w-100">
+                            <a href="#categories" data-bs-toggle="collapse"
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                                <span>
+                                    <i class="fa fa-server" aria-hidden="true"></i>
+                                    <span class="ms-1">Categories</span>
+                                </span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="categories">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Category1
+                                    </a>
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Category2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Brands -->
+                        <li class="nav-item w-100">
+                            <a href="#brands" data-bs-toggle="collapse"
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                                <span>
+                                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                                    <span class="ms-1">Brands</span>
+                                </span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="brands">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Brand1
+                                    </a>
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Brand2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Products -->
+                        <li class="nav-item w-100">
+                            <a href="#products" data-bs-toggle="collapse"
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                                <span>
+                                    <i class="fa fa-cubes" aria-hidden="true"></i>
+                                    <span class="ms-1">Products</span>
+                                </span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="products">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Product1
+                                    </a>
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Product2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Customer -->
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <span class="ms-1">Customers</span>
+                            </a>
+                        </li>
+
+                        <!-- Shipping -->
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                                <span class="ms-1">Shipping</span>
+                            </a>
+                        </li>
+
+                        <!-- Orders -->
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fa fa-calculator" aria-hidden="true"></i>
+                                <span class="ms-1">Orders</span>
+                            </a>
+                        </li>
+
+                        <!-- Reports -->
+                        <li class="nav-item w-100">
+                            <a href="#reports" data-bs-toggle="collapse"
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                                <span>
+                                    <i class="fa fa-flag" aria-hidden="true"></i>
+                                    <span class="ms-1">Reports</span>
+                                </span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="reports">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Report1
+                                    </a>
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Report2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Articles -->
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                                <span class="ms-1">Article</span>
+                            </a>
+                        </li>
+
+                        <!-- Menus -->
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                <span class="ms-1">Menus</span>
+                            </a>
+                        </li>
+
+                        <!-- Settings -->
+                        <li class="nav-item w-100">
+                            <a href="#settings" data-bs-toggle="collapse"
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                                <span>
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    <span class="ms-1">Settings</span>
+                                </span>
+                                <span class="dropdown-toggle"></span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="settings">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Setting1
+                                    </a>
+                                    <a href="#" class="nav-link px-0 text-white">
+                                        Setting2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col ps-md-2 pt-2">
+                <header class="navbar navbar-dark px-4">
+                    <a href="#sidebar" data-bs-toggle="collapse">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown justify-content-end">
+                        <a href="#" class="text-body text-decoration-none dropdown-toggle" id="userDropdownSm"
+                           data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                            <img src="https://avatarfiles.alphacoders.com/239/239189.jpg" alt="avatar" width="30" height="30"
+                                 class="rounded-circle">
+                            <span class="mx-1">The cat</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="userDropdownSm">
+                            <li><a href="#" class="dropdown-item">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="#" class="dropdown-item">Sign out</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <footer>
+                    <p>Shoppeum Admin - Copyright &copy; Shoppeum</p>
+                </footer>
+            </div>
+        </div>
     </div>
-    <script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>
+<!--    <script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>-->
+    <script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>
