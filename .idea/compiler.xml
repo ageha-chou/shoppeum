@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ShoppeumCommon" />
+        <module name="ShoppeumAdmin" />
+        <module name="ShoppeumSite" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ShoppeumAdmin" options="-parameters" />
+      <module name="ShoppeumCommon" options="-parameters" />
+      <module name="ShoppeumSite" options="-parameters" />
+      <module name="ShoppeumWebParent" options="" />
+    </option>
+  </component>
+</project>
