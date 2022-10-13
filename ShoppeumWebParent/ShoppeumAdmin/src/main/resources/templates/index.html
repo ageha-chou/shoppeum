@@ -6,23 +6,24 @@
     <title>Home - Shoppeum Admin</title>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/webjars/font-awesome/6.2.0/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
             <!-- Sidebar -->
-            <nav class="col-auto col-sm-4 col-xl-2 px-sm-2 px-0 bg-primary collapse collapse-horizontal show pb-2"
+            <nav class="col-auto col-sm-4 col-xl-2 px-sm-2 px-0 bg-light collapse collapse-horizontal d-sm-inline pb-2"
                  id="sidebar">
-                <div class="d-flex flex-column align-items-start px-3 pt-2 text-white min-vh-100">
-                    <a th:href="@{/}">
+                <div class="d-flex flex-column align-items-start px-3 pt-2 text-black min-vh-100">
+                    <a th:href="@{/}" class="text-decoration-none">
                         <img th:src="@{/images/logo.png}" alt="Logo" class="img-fluid d-none d-sm-inline">
                         <p class="text-black-50 d-sm-none fw-bold">Shoppeum</p>
                     </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start w-100"
+                    <ul class="nav flex-column mb-sm-auto mb-0 align-items-start w-100"
                         id="menu">
                         <!-- Users -->
                         <li class="nav-item w-100">
-                            <a class="d-flex justify-content-between nav-link px-0 align-middle text-white"
+                            <a class="d-flex justify-content-between nav-link px-0 align-middle text-black"
                                href="#users" data-bs-toggle="collapse">
                                 <span>
                                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -32,10 +33,10 @@
                             </a>
                             <ul class="collapse show nav flex-column ms-1" id="users">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black active">
                                         User1
                                     </a>
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         User2
                                     </a>
                                 </li>
@@ -45,7 +46,7 @@
                         <!-- Categories -->
                         <li class="nav-item w-100">
                             <a href="#categories" data-bs-toggle="collapse"
-                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-black">
                                 <span>
                                     <i class="fa fa-server" aria-hidden="true"></i>
                                     <span class="ms-1">Categories</span>
@@ -54,10 +55,10 @@
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="categories">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Category1
                                     </a>
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Category2
                                     </a>
                                 </li>
@@ -67,7 +68,7 @@
                         <!-- Brands -->
                         <li class="nav-item w-100">
                             <a href="#brands" data-bs-toggle="collapse"
-                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-black">
                                 <span>
                                     <i class="fa fa-sitemap" aria-hidden="true"></i>
                                     <span class="ms-1">Brands</span>
@@ -76,10 +77,10 @@
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="brands">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Brand1
                                     </a>
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Brand2
                                     </a>
                                 </li>
@@ -89,7 +90,7 @@
                         <!-- Products -->
                         <li class="nav-item w-100">
                             <a href="#products" data-bs-toggle="collapse"
-                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-black">
                                 <span>
                                     <i class="fa fa-cubes" aria-hidden="true"></i>
                                     <span class="ms-1">Products</span>
@@ -98,10 +99,10 @@
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="products">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Product1
                                     </a>
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Product2
                                     </a>
                                 </li>
@@ -110,7 +111,7 @@
 
                         <!-- Customer -->
                         <li class="nav-item w-100">
-                            <a href="#" class="nav-link align-middle px-0 text-white">
+                            <a href="#" class="nav-link align-middle px-0 text-black">
                                 <i class="fa fa-users" aria-hidden="true"></i>
                                 <span class="ms-1">Customers</span>
                             </a>
@@ -118,7 +119,7 @@
 
                         <!-- Shipping -->
                         <li class="nav-item w-100">
-                            <a href="#" class="nav-link align-middle px-0 text-white">
+                            <a href="#" class="nav-link align-middle px-0 text-black">
                                 <i class="fa fa-truck" aria-hidden="true"></i>
                                 <span class="ms-1">Shipping</span>
                             </a>
@@ -126,7 +127,7 @@
 
                         <!-- Orders -->
                         <li class="nav-item w-100">
-                            <a href="#" class="nav-link align-middle px-0 text-white">
+                            <a href="#" class="nav-link align-middle px-0 text-black">
                                 <i class="fa fa-calculator" aria-hidden="true"></i>
                                 <span class="ms-1">Orders</span>
                             </a>
@@ -135,7 +136,7 @@
                         <!-- Reports -->
                         <li class="nav-item w-100">
                             <a href="#reports" data-bs-toggle="collapse"
-                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-black">
                                 <span>
                                     <i class="fa fa-flag" aria-hidden="true"></i>
                                     <span class="ms-1">Reports</span>
@@ -144,10 +145,10 @@
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="reports">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Report1
                                     </a>
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Report2
                                     </a>
                                 </li>
@@ -156,7 +157,7 @@
 
                         <!-- Articles -->
                         <li class="nav-item w-100">
-                            <a href="#" class="nav-link align-middle px-0 text-white">
+                            <a href="#" class="nav-link align-middle px-0 text-black">
                                 <i class="fa fa-file-text" aria-hidden="true"></i>
                                 <span class="ms-1">Article</span>
                             </a>
@@ -164,7 +165,7 @@
 
                         <!-- Menus -->
                         <li class="nav-item w-100">
-                            <a href="#" class="nav-link align-middle px-0 text-white">
+                            <a href="#" class="nav-link align-middle px-0 text-black">
                                 <i class="fa fa-list-alt" aria-hidden="true"></i>
                                 <span class="ms-1">Menus</span>
                             </a>
@@ -173,7 +174,7 @@
                         <!-- Settings -->
                         <li class="nav-item w-100">
                             <a href="#settings" data-bs-toggle="collapse"
-                               class="d-flex justify-content-between nav-link px-0 align-middle text-white">
+                               class="d-flex justify-content-between nav-link px-0 align-middle text-black">
                                 <span>
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                     <span class="ms-1">Settings</span>
@@ -182,10 +183,10 @@
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="settings">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Setting1
                                     </a>
-                                    <a href="#" class="nav-link px-0 text-white">
+                                    <a href="#" class="nav-link px-0 text-black">
                                         Setting2
                                     </a>
                                 </li>
